@@ -27,7 +27,12 @@ h1, h2, h3, h4, h5, h6, p {
     margin: 0;
     padding: 0;
 }
-
+p {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    font-weight: 400;
+    color: var(--light-black);
+} 
 ul, ol {
     padding-left: 0;
     margin: 0;
@@ -43,14 +48,8 @@ a {
 }
 
 .or-container {
-    /* min-width: 1240px; */
     max-width: 1240px;
     padding-inline: 20px;
-    /* margin-inline: auto; */
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: inherit; */
 }
 
 .main-btn{
@@ -82,6 +81,47 @@ a {
         color: var(--primary-color);
     }
 }
+header {
+    position: relative;
+    z-index: 1;
+}
+.header-options {
+    .money span {
+        font-size: 1.6rem;
+        line-height: 4.3rem;
+        font-weight: 600;
+        color: var(--primary-color);
+    }
+    .cart {
+        position: relative;
+        .icon {
+            i {
+                font-size: 1.6rem;
+                color: var(--primary-color);
+            }
+        }
+        .badge {
+            position: absolute;
+            top: -1.2rem;
+            right: -0.6rem;
+            width: 1.6rem;
+            height: 1.6rem;
+            background-color: var(--primary-color);
+            color: var(--black);
+            display: grid;
+            place-content: center;
+            border-radius: 50px;
+            font-size: 1rem;
+        }    
+    } 
+    .user {
+        i {
+            font-size: 1.6rem;
+            color: var(--black);
+        }
+    }
+} 
+
 .section-heading {
     text-align: center;
     margin-block-end: 6rem;
@@ -169,9 +209,6 @@ a {
             margin-block-end: 0.3rem;
         }
         p {
-            font-size: 1.6rem;
-            font-weight: 400;
-            line-height: 2.6rem;
             color: var(--white);
         }
     }
@@ -284,10 +321,6 @@ a {
 }
 
 .category .category-block p {
-  font-size: 1.6rem;
-  line-height: 2.6rem;
-  font-weight: 400;
-  color: var(--light-black);
   margin-block-end: 2rem;
 }
 
@@ -367,10 +400,6 @@ a {
                  }
             }
             p {
-                font-size: 1.6rem;
-                line-height: 2.6rem;
-                font-weight: 400;
-                color: var(--light-black);
                 margin-block: 2rem;
             }
             .user-wrapper {
@@ -427,9 +456,6 @@ a {
                     margin-block-end: 1.8rem;
                 }
                 p {
-                    font-size: 1.6rem;
-                    line-height: 2.6rem;
-                    font-weight: 400;
                     color: var(--white);
                 }
                 a.main-btn {
@@ -437,6 +463,247 @@ a {
                     margin-block-end: 1.2rem;
                 }
            }
+        }
+    }
+}
+.brand {
+    padding-block-end: 4rem;
+    background-color: var(--gray-bg);
+    .brand-wrapper {
+        h2 {
+            font-size: clamp(1.8rem, 2vw, 2rem);
+            line-height: 2.4rem;
+            font-weight: 700;
+            font-family: var(--secondary-font);
+            color: var(--black);
+            text-transform: capitalize;
+            white-space: nowrap;
+        }
+        ul {
+            li:not(:last-child) {
+                margin-inline: 40px;
+            }
+        }
+    }
+}
+
+footer {
+    background-color: var(--black);
+    .top-footer {
+        padding-block: 7.5rem;
+        border-bottom: 1px solid #7d7d7d45;
+        .footer-block {
+            .footer-logo{
+                margin-block-end: 2.8rem;
+            }
+            address {
+                color: var(--white);
+                font-size: 1.6rem;
+                line-height: 2.6rem;
+                font-weight: 700;
+                font-style: italic;
+            }
+            h2 {
+                font-size: 2.2rem;
+                line-height: 3.3rem;
+                font-weight: 600;
+                color: var(--white);
+                margin-block-end: 1.6rem;
+                font-family: var(--secondary-font);
+                text-transform: capitalize;
+            }
+            ul {
+                li {
+                    margin-block-end: 0.5rem;
+                    a {
+                        font-size: 1.6rem;
+                        line-height: 2.6rem;
+                        color: var(--gray-bg);
+                        opacity: 0.5;
+                        text-transform: capitalize;
+                        &:hover {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .bottom-footer {
+        padding-block: 3rem;
+        p {
+            color: var(--white);
+        }         
+        ul.footer-social {
+            li {
+                a {
+                    display: inline-block;
+                    i  {
+                        color: var(--white);
+                        font-size: 1.6rem;
+                        transition: 0.3s all ease;
+                    }
+                    &:hover {
+                        i {
+                            color: var(--primary-color);
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+/* ABOUT US CSS */
+header.tr-header {
+    .navbar {
+        background: transparent !important;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 0;
+    }
+} 
+.hero-section {
+    background-color: var(--gray-bg);
+    display: grid;
+    place-content: center;
+    padding-block:15rem 12rem;
+    /* position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 0; */
+    h1 {
+        font-size: clamp(2.5rem, 5vw, 5.2rem);
+        line-height: 7.2rem;
+        font-weight: 700;
+        font-family: var(--secondary-font);
+    }
+}
+.top-image {
+    img.img-fluid {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-8.1rem, -50%);
+    }
+}
+.image-wth-text {
+    position: relative;
+    padding-block: 12rem;
+    .content {
+        h2 {
+            font-size: clamp(1.8rem,3vw, 3.4rem);
+            line-height: 4.4rem;
+            font-weight: 700;
+            font-family: var(--secondary-font);
+            color: var(--black);
+            margin-block-end: 1rem;
+        }
+    }
+}
+.achievement {
+    padding-block: 4rem;
+    background-color: var(--black);
+    h3 {
+        font-size: clamp(1.8rem, 2vw, 2rem);
+        line-height: 2.4rem;
+        font-weight: 700;
+        font-family: var(--secondary-font);
+        color: var(--white);
+    }
+    .achievement-block {
+        text-align: center;
+        .number {
+            font-size: clamp(2rem, 5vw, 4.6rem);
+            line-height: 4.6rem;
+            font-weight: 600;
+            color: var(--white);
+            display: inline-block;
+            span {
+                color: var(--white);
+            }
+        }
+        p {
+            font-size: clamp(1.6rem, 2vw, 2rem);
+            line-height: 4.8rem;
+            color: var(--white);
+
+        }
+    }
+}
+
+.certified-products {
+    padding-block: 18rem 14rem ;
+    .certified-products-slider-wrapper {
+        padding: 0 4rem 4rem;
+        background-color: var(--gray-bg);
+        .certified-products-slider {
+            transform: translateY(-8rem);
+            img {
+                border-radius: 0.8rem;
+            }
+        }
+        .rating {
+            margin-block-end: 2rem;
+            li {
+                i {
+                    color: var(--gloden);
+                    font-size: 1.4rem;
+                }
+            }
+        }
+        .user-info {
+            margin-block-start: 2rem;
+            span {
+                font-size: 1.6rem;
+                color: var(--black);
+            }
+        }
+    }
+    .certified-products-content {
+        padding-inline-start: 10rem;
+    }
+    .content {
+        h3 {
+            font-size: clamp(1.8rem, 2vw, 2.4rem);
+            line-height: 3.2rem;
+            font-weight: 700;
+            font-family: var(--secondary-font);
+            margin-block-end: 1.6rem;
+            color: var(--black);
+        }
+    }
+    h2 {
+        font-size: clamp(2rem, 4vw, 3.4rem);
+        line-height: 4.4rem;
+        font-weight: 700;
+        font-family: var(--secondary-font);
+        margin-block-end: 1rem;
+        color: var(--black);
+    }
+     .leaf-img {
+        margin-block-end :1.6rem;
+    }
+    ul.certified-products-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        margin-block-end: 3.8rem;
+        li {
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+            font-weight: 400;
+            color: var(--black);
+            i {
+                color: var(--primary-color);
+                margin-right: 1rem;
+                width: 1.6rem;
+
+            }
         }
     }
 }

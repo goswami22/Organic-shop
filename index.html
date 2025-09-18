@@ -30,7 +30,7 @@
         <!-- Navigation start -->
         <nav class="navbar navbar-expand-lg bg-white">
             <div class="or-container container">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <img src="./assets/images/organic-store-logo.svg" alt="logo" width="150" height="70"
                         class="img-fluid">
                 </a>
@@ -45,7 +45,7 @@
                             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="about.html">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="">everthing</a>
@@ -60,10 +60,19 @@
                             <a class="nav-link" href="">contact</a>
                         </li>
                     </ul>
-                    <div class="header-options">
-                        <div class="money"></div>
-                        <div class="cart"></div>
-                        <div class="user"></div>
+                    <div class="header-options d-flex gap-4 align-items-center">
+                        <div class="money">
+                            <a href="#" title="money"><span>£0.00</span></a>
+                        </div>
+                        <div class="cart">
+                            <div class="icon">
+                                <a href="#" title="shopping basket"><i class="fa-solid fa-basket-shopping"></i></a>
+                            </div>
+                            <div class="badge">0</div>
+                        </div>
+                        <div class="user">
+                            <a href="#" title="user"><i class="fa-solid fa-user"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -507,10 +516,122 @@
                 </div>
             </div>
          </section>
+
+         <!-- featured brand start -->
+          <section class="brand">
+            <div class="container or-container">
+                <div class="brand-wrapper d-flex flex-column flex-lg-row justify-content-lg-between align-items-center">
+                        <h2 class="title">featured brands:</h2>
+                        <ul class="d-flex justify-content-between flex-column flex-lg-row">
+                            <li class="text-center"><a href="#" title="featured brand">
+                                <img src="./assets/images/logoipsum-215.svg" alt="fratured brand" class="img-fluid" width="132" height="40" loading="lazy"> 
+                            </a>
+                            </li>
+                                <li class="text-center"><a href="#" title="featured brand">
+                                    <img src="./assets/images/logoipsum-215.svg" alt="fratured brand" class="img-fluid" width="132" height="40" loading="lazy"> 
+                                </a>
+                            </li>
+                                <li class="text-center"><a href="#" title="featured brand">
+                                    <img src="./assets/images/logoipsum-215.svg" alt="fratured brand" class="img-fluid" width="132" height="40" loading="lazy"> 
+                                </a>
+                            </li>
+                                <li class="text-center"><a href="#" title="featured brand">
+                                    <img src="./assets/images/logoipsum-215.svg" alt="fratured brand" class="img-fluid" width="132" height="40" loading="lazy"> 
+                                </a>
+                            </li>
+                                <li class="text-center"><a href="#" title="featured brand">
+                                    <img src="./assets/images/logoipsum-215.svg" alt="fratured brand" class="img-fluid" width="132" height="40" loading="lazy"> 
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+        </section>
     </main>
 
     <!-- Footer start -->
-    <footer></footer>
+    <footer>
+        <div class="top-footer">
+            <div class="container or-container">
+                <div class="row gy-3 gy-lg-0">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="footer-block">
+                            <a href="index.html" title="footer logo" class="footer-logo">
+                                <img src="./assets/images/organic-store-white-logo.png" alt="logo" width="180" height="80" loading="lazy">
+                            </a>
+                            <address>
+                                Maecenas mi justo, interdum at consectetur vel, tristique et arcu.
+                            </address>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-9">
+                        <div class="row">
+                            <div class="col-md-6 mb-3 mb-lg-0 col-lg-4">
+                                <div class="footer-block">
+                                    <h2>Website</h2>
+                                    <ul>
+                                        <li><a href="index.html" title="Home">Home</a></li>
+                                        <li><a href="about.html" title="About">about</a></li>
+                                        <li><a href="#" title="Everything">everything</a></li>
+                                        <li><a href="#" title="Groceries">groceries</a></li>
+                                        <li><a href="#" title="Juice">juice</a></li>
+                                        <li><a href="#" title="Contact">contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3 mb-lg-0 col-lg-4">
+                                <div class="footer-block">
+                                    <h2>Quick Links</h2>
+                                    <ul>
+                                        <li><a href="#" title="Know More About Us">Know More About Us</a></li>
+                                        <li><a href="#" title="Visit Store">Visit Store</a></li>
+                                        <li><a href="#" title="Let’s Connect">Let’s Connect</a></li>
+                                        <li><a href="#" title="Locate Stores">Locate Stores</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="footer-block">
+                                    <h2>Site Links</h2>
+                                    <ul>
+                                        <li><a href="#" title="Privacy Policy">Privacy Policy</a></li>
+                                        <li><a href="#" title="Shipping Details">Shipping Details</a></li>
+                                        <li><a href="#" title="Offers Coupons">Offers Coupons</a></li>
+                                        <li><a href="#" title="Terms & Conditions">Terms & Conditions</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <div class="container or-container">
+                <div class="row gap-3 gap-md-0">
+                    <div class="col-md-6">
+                        <p class="text-center text-md-start">Copyright © 2025 | Organic Store</p>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="footer-social d-flex gap-4 justify-content-center justify-content-md-end">
+                            <li>
+                                <a href="#" title="facebook"><i class="fa-brands fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" title="twitter"><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" title="instagram"><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" title="facebook"><i class="fa-brands fa-yelp"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
