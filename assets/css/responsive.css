@@ -30,7 +30,6 @@ p {
   line-height: 2.6rem;
   font-weight: 400;
   color: var(--light-black);
-  font-family: var(--primary-font);
 }
 ul, ol {
   padding-left: 0;
@@ -77,16 +76,9 @@ a, button {
 .navbar-expand-lg .navbar-nav .nav-link:hover {
   color: var(--primary-color);
 }
-.navbar .navbar-collapse {
-    background: var(--gray-bg);
-}
 header {
   position: relative;
   z-index: 1;
-}
-.header-options {
-  padding-inline: 2rem;
-  padding-block-start:1rem;
 }
 .header-options .money span {
   font-size: 1.6rem;
@@ -120,7 +112,7 @@ header {
 }
 .section-heading {
   text-align: center;
-  margin-block-end: 4rem;
+  margin-block-end: 6rem;
 }
 .section-heading h2 {
   font-size: clamp(2rem, 3vw, 3.4rem);
@@ -131,7 +123,7 @@ header {
   margin-block-end: 2rem;
 }
 .hero-banner {
-  padding-block: 6rem;
+  padding-block: 12rem;
   background-color: var(--gray-bg);
   position: relative;
 }
@@ -150,26 +142,31 @@ header {
   margin-block-end: 2rem;
 }
 .hero-banner .hero-content {
-  padding-inline-start: 1rem;
+  padding-inline-start: 8rem;
 }
 .hero-banner span.subtitle {
   font-size: clamp(16px, 2vw, 18px);
-  line-height: 1.5rem;
+  line-height: 2rem;
   font-weight: 700;
   font-family: var(--secondary-font);
   color: var(--black);
-  margin-block-end: 1.5rem;
+  margin-block-end: 2rem;
   display: inline-block;
 }
 .hero-banner h1 {
-  font-size: clamp(25px, 4vw, 52px);
-  line-height: 1.5;
+  font-size: clamp(25px, 5vw, 52px);
+  line-height: 7.2rem;
   font-weight: 700;
   font-family: var(--secondary-font);
   color: var(--black);
-  margin-block-end: 1.5rem;
+  margin-block-end: 2rem;
 }
 .hero-banner p {
+  font-size: 16px;
+  line-height: 2.6rem;
+  font-weight: 400;
+  font-family: var(--primary-font);
+  color: var(--light-black);
   margin-block-end: 2rem;
 }
 .our-servives {
@@ -184,9 +181,6 @@ header {
   align-items: self-start;
   gap: 1.5rem;
 }
-.our-servives .servives-block p {
-  color: var(--white);
-}
 .our-servives .servives-block .icon i {
   color: var(--primary-color);
   font-size: 2.4rem;
@@ -198,6 +192,9 @@ header {
   color: var(--white);
   font-family: var(--secondary-font);
   margin-block-end: 0.3rem;
+}
+.our-servives .servives-block p {
+  color: var(--white);
 }
 .slick-slide {
   margin: 0 10px;
@@ -223,9 +220,9 @@ header {
   font-weight: 400;
   color: var(--light-black);
 }
-.item .content h2 a {
+.item .content h3 a {
   font-size: 1.6rem;
-  display: inline-block;
+  display: inline-blocks;
   font-weight: 700;
   line-height: 2rem;
   color: var(--black);
@@ -247,10 +244,10 @@ header {
   font-weight: 700;
 }
 .best-selling, .treding-product {
-  padding-block: 4rem 8rem;
+  padding-block: 14rem 10rem;
 }
 .category {
-  padding-block: 8rem;
+  padding-block: 100px;
   background-color: var(--gray-bg);
   position: relative;
 }
@@ -364,7 +361,7 @@ header {
 .testimonial .testimonial-wrapper .testimonial-block:not(.center-card) {
   padding-block: 5rem;
   padding-inline: 4.5rem;
-  margin-block-start: 6rem;
+  margin-block-start: 10rem;
   background-color: var(--white);
   box-shadow: 0 0 10px #b0b4b72b;
 }
@@ -396,7 +393,6 @@ header {
 .testimonial .testimonial-wrapper .testimonial-block.center-card {
   position: relative;
   padding: 4.5rem;
-  margin-block-start: 6rem;
   border-radius: 0.5rem;
   overflow: hidden;
   box-shadow: 0 0 10px #b0b4b72b;
@@ -515,6 +511,7 @@ footer .bottom-footer ul.footer-social li a:hover i {
   color: var(--primary-color);
 }
 
+
 /* ABOUT US CSS */
 header.tr-header .navbar {
   background: transparent !important;
@@ -544,7 +541,7 @@ header.tr-header .navbar {
 }
 .image-wth-text {
   position: relative;
-  padding-block: 6rem;
+  padding-block: 12rem;
 }
 .image-wth-text .content h2 {
   font-size: clamp(1.8rem, 3vw, 3.4rem);
@@ -569,7 +566,7 @@ header.tr-header .navbar {
   text-align: center;
 }
 .achievement .achievement-block .number {
-  font-size: clamp(2rem, 4vw, 4.6rem);
+  font-size: clamp(2rem, 5vw, 4.6rem);
   line-height: 4.6rem;
   font-weight: 600;
   color: var(--white);
@@ -584,15 +581,14 @@ header.tr-header .navbar {
   color: var(--white);
 }
 .certified-products {
-  padding-block: 10rem 6rem;
+  padding-block: 18rem 14rem;
 }
 .certified-products .certified-products-slider-wrapper {
   padding: 0 4rem 4rem;
   background-color: var(--gray-bg);
-  margin-block-end: 3rem;
 }
 .certified-products .certified-products-slider-wrapper .certified-products-slider {
-  transform: translateY(-4rem);
+  transform: translateY(-8rem);
 }
 .certified-products .certified-products-slider-wrapper .certified-products-slider img {
   border-radius: 0.8rem;
@@ -612,9 +608,8 @@ header.tr-header .navbar {
   color: var(--black);
 }
 .certified-products .certified-products-content {
-  padding-inline-start: 0;
+  padding-inline-start: 10rem;
 }
-.certified-products .certified-products-content .product-label {margin-block-end: 2rem;}
 .certified-products .content h3 {
   font-size: clamp(1.8rem, 2vw, 2.4rem);
   line-height: 3.2rem;
@@ -651,10 +646,9 @@ header.tr-header .navbar {
   margin-right: 1rem;
   width: 1.6rem;
 }
-
 /* EVERYTHING CSS */
 .product-grid {
-  padding-block-start: 4rem;
+  padding-block-start: 6rem;
   background-color: var(--gray-bg);
 }
 .product-grid .product-grid-wrapper {
@@ -662,13 +656,14 @@ header.tr-header .navbar {
   justify-content: space-between;
 }
 .product-grid .filter-area {
+    /* margin-inline-end: 6rem; */
     padding-inline-end: 6rem;
     border-inline-end: 0.1rem solid var(--graylight);
 }
 .product-grid .product-grid-area {
-  padding-block-end: 2rem;
+  padding-block-end: 6rem;
   margin-block-end: 4rem;
-  padding-inline-start: 1rem;
+  padding-inline-start: 6rem;
 }
 .product-grid .product-grid-area .breadcrumb {
   margin-block-end: 1.6rem;
@@ -684,13 +679,13 @@ header.tr-header .navbar {
   font-size: 1.4rem;
 }
 h1.page-title {
-  font-size: clamp(3rem, 4vw, 5.2rem);
+  font-size: 5.2rem;
   line-height: 7.2rem;
   font-family: var(--secondary-font);
   font-weight: 600;
   text-transform: capitalize;
   color: var(--primary-color);
-  margin-block-end: 2.2rem;
+  margin-block-end: 5.2rem;
 }
 .grid-filter {
   margin-block-end: 4rem;
@@ -708,9 +703,6 @@ h1.page-title {
   line-height: 1.6rem;
   border: none;
   background-color: transparent;
-}
-.grid-filter .shorting select option {
-  font-size: 1.4rem;
 }
 .grid-filter .shorting select:focus-visible {
   outline: none;
@@ -794,66 +786,4 @@ ul.product-category li a {
 }
 .filter-block .product-block:last-child {
   margin-block-end: 0;
-}
-
-
-
-/* Tablet */
-@media screen and (min-width: 768px) {
-  /* Home page css */
-  .hero-banner span.subtitle {line-height: 2rem;margin-block-end: 2rem;}
-  .hero-banner .hero-content {padding-inline-start: 2rem;}
-  .hero-banner {padding-block: 8rem;}
-  .best-selling, .treding-product {padding-block: 8rem 8rem;}
-  .section-heading {margin-block-end: 6rem;}
-  .category {padding-block: 8rem;}
-  .testimonial {padding-block: 8rem;}
-  .certified-products .certified-products-slider-wrapper {margin-block-end: 0rem;}
-  
-  /* About css */
-  .certified-products {padding-block: 10rem 9rem;} 
-  .certified-products .certified-products-slider-wrapper .certified-products-slider {transform: translateY(-4rem);}
-  .certified-products .certified-products-content {padding-inline-start: 3rem;}
-  .certified-products .certified-products-content .product-label {margin-block-end: 3rem;}
-  
-}
-/* laptop */
-@media screen and (min-width: 992px) {
-  /* Home page css */
-  .navbar .navbar-collapse {background: var(--white);}
-  .tr-header .navbar .navbar-collapse {background: var(--gray-bg);}
-  .header-options {padding-inline: 0;padding-block-start:0;}
-  .hero-banner h1 {line-height: 7.2rem;margin-block-end: 2rem;}
-  .hero-banner .hero-content {padding-inline-start: 4rem;}
-  .testimonial {padding-block: 10rem;}
-   .testimonial .testimonial-wrapper .testimonial-block:not(.center-card) {margin-block-start: 8rem;}
-  .testimonial .testimonial-wrapper .testimonial-block.center-card {margin-block-start: 0rem;} 
-  .certified-products {padding-block: 18rem 14rem;} 
-
-  /* About css */
-  .image-wth-text {padding-block: 12rem;}
-  .product-grid .product-grid-area {padding-block-end: 6rem;margin-block-end: 4rem;padding-inline-start: 6rem;}
-  .product-grid .filter-area {padding-inline-end: 2rem;margin-block-end: 4rem;}
-  .product-grid .product-grid-area {padding-inline-start: 2rem;}
-
-  /* Everythind css */
-   h1.page-title {margin-block-end: 3.2rem;}
-  .product-grid {padding-block-start: 6rem;}
-  
-}
-/* Desktop */
-@media screen and (min-width: 1200px) {
-  /* Home page css */
-  .hero-banner .hero-content {padding-inline-start: 8rem;}
-  .hero-banner,.testimonial {padding-block: 12rem;}
-  .best-selling, .treding-product {padding-block: 14rem 10rem;}
-  .testimonial .testimonial-wrapper .testimonial-block:not(.center-card) {margin-block-start: 10rem;}
-  
-  /* About css */
-  .product-grid .product-grid-area {padding-block-end: 6rem;margin-block-end: 4rem;padding-inline-start: 6rem;}
-
-  /* Everything css */
-  h1.page-title {margin-block-end: 5.2rem;}
-
-
 }

@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="it's organi product site">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+
+    <!-- slick slider css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Organi shop - Everything</title>
+</head>
+
+<body>
+
+    <!-- Header start -->
+    <header>
+        <!-- Navigation start -->
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="or-container container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./assets/images/organic-store-logo.svg" alt="logo" width="150" height="70"
+                        class="img-fluid">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="everything.html">everthing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">groceries</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">juice</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">contact</a>
+                        </li>
+                    </ul>
+                    <div class="header-options d-flex gap-4 align-items-center">
+                        <div class="money">
+                            <a href="#" title="money"><span>£0.00</span></a>
+                        </div>
+                        <div class="cart">
+                            <div class="icon">
+                                <a href="#" title="shopping basket"><i class="fa-solid fa-basket-shopping"></i></a>
+                            </div>
+                            <div class="badge">0</div>
+                        </div>
+                        <div class="user">
+                            <a href="#" title="user"><i class="fa-solid fa-user"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main start -->
+    <main>
+        <div class="product-grid">
+            <div class="container or-container">
+                <div class="product-grid-wrapper row">
+                    <div class="filter-area col-lg-3 d-none d-lg-block">
+                        <div class="filter-block">
+                            <form action="">
+                                <div class="field d-flex align-items-center gap-3">
+                                    <input type="text" id="search-product" class="form-control h-100"
+                                        placeholder="search product">
+                                    <button class="main-btn" title="Search button"><i class="fa-solid fa-angle-right"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="filter-block">
+                            <ul class="product-category">
+                                <li><a href="#" title="Groceries">Groceries <span>(10)</span></a></li>
+                                <li><a href="#" title="juice">juice <span>(8)</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="filter-block">
+                            <div class="recent-view">
+                                <div class="product-block">
+                                    <div class="img-box">
+                                        <img src="./assets/images/edible-oil-400x400.jpg" alt="product image"
+                                            class="img-fluid" width="400" height="400">
+                                    </div>
+                                    <div class="content">
+                                        <div class="name">
+                                            <a href="#" title="Assorted Coffee">Assorted Coffee</a>
+                                        </div>
+                                        <div class="price">$150.00</div>
+                                    </div>
+                                </div>
+                                <div class="product-block">
+                                    <div class="img-box">
+                                        <img src="./assets/images/coffee-asorted-400x400.jpg" alt="product image"
+                                            class="img-fluid" width="400" height="400">
+                                    </div>
+                                    <div class="content">
+                                        <div class="name">
+                                            <a href="#" title="Assorted Coffee">Assorted Coffee</a>
+                                        </div>
+                                        <div class="price">$40.00</div>
+                                    </div>
+                                </div>
+                                <div class="product-block">
+                                    <div class="img-box">
+                                        <img src="./assets/images/sanitizer-400x400.jpg" alt="product image"
+                                            class="img-fluid" width="400" height="400">
+                                    </div>
+                                    <div class="content">
+                                        <div class="name">
+                                            <a href="#" title="Assorted Coffee">Assorted Coffee</a>
+                                        </div>
+                                        <div class="price">$35.00</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-grid-area col-lg-9">
+                        <div class="product-grid-area-wrapper">
+                            <ul class="breadcrumb d-flex">
+                                <li><a href="index.html" title="Home">home</a></li>
+                                <li> / </li>
+                                <li>shop</li>
+                            </ul>
+                            <h1 class="page-title">Shop</h1>
+                            <div class="grid-filter d-flex justify-content-between">
+                                <div class="show-items">Showing 1–9 of 12 results</div>
+                                <div class="shorting">
+                                    <select name="shorting" aria-label="shortings">
+                                        <option value="Default sorting">Default sorting</option>
+                                        <option value="Sort by popularity">Sort by popularity</option>
+                                        <option value="Sort by average rating">Sort by average rating</option>
+                                        <option value="Sort by latest">Sort by latest</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="product-grid-items">
+                                <div class="item" style="width: 100%; display: inline-block;">
+                                    <a href="#" title="product image" tabindex="-1">
+                                        <img src="./assets/images/coffee-asorted-400x400.jpg" alt="product image"
+                                            width="400" height="400" class="img-fluid">
+                                    </a>
+                                    <div class="content">
+                                        <div class="category">Groceries</div>
+                                        <h2 class="title">
+                                            <a href="#" title="product title" tabindex="-1">Natural Extracted Edible
+                                                Oil</a>
+                                        </h2>
+                                        <ul class="rating">
+                                           <li> <i class="fa-regular fa-star"></i></li>
+                                           <li> <i class="fa-regular fa-star"></i></li>
+                                           <li> <i class="fa-regular fa-star"></i></li>
+                                           <li> <i class="fa-regular fa-star"></i></li>
+                                           <li> <i class="fa-regular fa-star"></i></li>
+                                        </ul>
+                                        <div class="price">
+                                            <spna class="current-price">£27.00</spna>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item" style="width: 100%; display: inline-block;">
+                                    <a href="#" title="product image" tabindex="-1">
+                                        <img src="./assets/images/cashew-butter-500-400x400.jpg" alt="product image"
+                                            width="400" height="400" class="img-fluid">
+                                    </a>
+                                    <div class="content">
+                                        <div class="category">Groceries</div>
+                                        <h2 class="title">
+                                            <a href="#" title="product title" tabindex="-1">Natural Extracted Edible
+                                                Oil</a>
+                                        </h2>
+                                        <ul class="rating">
+                                           <li><i class="fa-regular fa-star"></i></li>
+                                           <li><i class="fa-regular fa-star"></i></li>
+                                           <li><i class="fa-regular fa-star"></i></li>
+                                           <li><i class="fa-regular fa-star"></i></li>
+                                           <li><i class="fa-regular fa-star"></i></li>
+                                        </ul>
+                                        <div class="price">
+                                            <spna class="current-price">£27.00</spna>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item" style="width: 100%; display: inline-block;">
+                                    <a href="#" title="product image" tabindex="-1">
+                                        <img src="./assets/images/diabetic-cookies-400x400.jpg" alt="product image"
+                                            width="400" height="400" class="img-fluid">
+                                    </a>
+                                    <div class="content">
+                                        <div class="category">Groceries</div>
+                                        <h2 class="title">
+                                            <a href="#" title="product title" tabindex="-1">Natural Extracted Edible
+                                                Oil</a>
+                                        </h2>
+                                        <ul class="rating">
+                                            <li><i class="fa-regular fa-star"></i></li>
+                                            <li><i class="fa-regular fa-star"></i></li>
+                                            <li><i class="fa-regular fa-star"></i></li>
+                                            <li><i class="fa-regular fa-star"></i></li>
+                                            <li><i class="fa-regular fa-star"></i></li>
+                                        </ul>
+                                        <div class="price">
+                                            <spna class="current-price">£27.00</spna>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item" style="width: 100%; display: inline-block;">
+                                    <a href="#" title="product image" tabindex="-1">
+                                        <img src="./assets/images/eggs-400x400.jpg" alt="product image"
+                                            width="400" height="400" class="img-fluid">
+                                    </a>
+                                    <div class="content">
+                                        <div class="category">Groceries</div>
+                                        <h2 class="title">
+                                            <a href="#" title="product title" tabindex="-1">Natural Extracted Edible
+                                                Oil</a>
+                                        </h2>
+                                        <ul class="rating">
+                                             <li><i class="fa-regular fa-star"></i></li>
+                                             <li><i class="fa-regular fa-star"></i></li>
+                                             <li><i class="fa-regular fa-star"></i></li>
+                                             <li><i class="fa-regular fa-star"></i></li>
+                                             <li><i class="fa-regular fa-star"></i></li>
+                                        </ul>
+                                        <div class="price">
+                                            <spna class="current-price">£27.00</spna>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item" style="width: 100%; display: inline-block;">
+                                    <a href="#" title="product image" tabindex="-1">
+                                        <img src="./assets/images/organic-honey-400x400.jpg" alt="product image"
+                                            width="400" height="400" class="img-fluid">
+                                    </a>
+                                    <div class="content">
+                                        <div class="category">Groceries</div>
+                                        <h2 class="title">
+                                            <a href="#" title="product title" tabindex="-1">Natural Extracted Edible
+                                                Oil</a>
+                                        </h2>
+                                        <ul class="rating">
+                                             <li> <i class="fa-regular fa-star"></i></li>
+                                             <li> <i class="fa-regular fa-star"></i></li>
+                                             <li> <i class="fa-regular fa-star"></i></li>
+                                             <li> <i class="fa-regular fa-star"></i></li>
+                                             <li> <i class="fa-regular fa-star"></i></li>
+                                        </ul>
+                                        <div class="price">
+                                            <spna class="current-price">£27.00</spna>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item" style="width: 100%; display: inline-block;">
+                                    <a href="#" title="product image" tabindex="-1">
+                                        <img src="./assets/images/orage-juice-kariz-400x400.jpg" alt="product image"
+                                            width="400" height="400" class="img-fluid">
+                                    </a>
+                                    <div class="content">
+                                        <div class="category">Groceries</div>
+                                        <h2 class="title">
+                                            <a href="#" title="product title" tabindex="-1">Natural Extracted Edible
+                                                Oil</a>
+                                        </h2>
+                                        <ul class="rating">
+                                            <li><i class="fa-regular fa-star"></i></li>
+                                            <li><i class="fa-regular fa-star"></i></li>
+                                            <li><i class="fa-regular fa-star"></i></li>
+                                            <li><i class="fa-regular fa-star"></i></li>
+                                            <li><i class="fa-regular fa-star"></i></li>
+                                        </ul>
+                                        <div class="price">
+                                            <spna class="current-price">£27.00</spna>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item" style="width: 100%; display: inline-block;">
+                                    <a href="#" title="product image" tabindex="-1">
+                                        <img src="./assets/images/sanitizer-400x400.jpg" alt="product image"
+                                            width="400" height="400" class="img-fluid">
+                                    </a>
+                                    <div class="content">
+                                        <div class="category">Groceries</div>
+                                        <h2 class="title">
+                                            <a href="#" title="product title" tabindex="-1">Natural Extracted Edible
+                                                Oil</a>
+                                        </h2>
+                                        <ul class="rating">
+                                           <li><i class="fa-regular fa-star"></i></li>
+                                           <li><i class="fa-regular fa-star"></i></li>
+                                           <li><i class="fa-regular fa-star"></i></li>
+                                           <li><i class="fa-regular fa-star"></i></li>
+                                           <li><i class="fa-regular fa-star"></i></li>
+                                        </ul>
+                                        <div class="price">
+                                            <spna class="current-price">£27.00</spna>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item" style="width: 100%; display: inline-block;">
+                                    <a href="#" title="product image" tabindex="-1">
+                                        <img src="./assets/images/red-chillies-400x400.jpg" alt="product image"
+                                            width="400" height="400" class="img-fluid">
+                                    </a>
+                                    <div class="content">
+                                        <div class="category">Groceries</div>
+                                        <h2 class="title">
+                                            <a href="#" title="product title" tabindex="-1">Natural Extracted Edible
+                                                Oil</a>
+                                        </h2>
+                                        <ul class="rating">
+                                             <li><i class="fa-regular fa-star"></i></li>
+                                             <li><i class="fa-regular fa-star"></i></li>
+                                             <li><i class="fa-regular fa-star"></i></li>
+                                             <li><i class="fa-regular fa-star"></i></li>
+                                             <li><i class="fa-regular fa-star"></i></li>
+                                        </ul>
+                                        <div class="price">
+                                            <spna class="current-price">£27.00</spna>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item" style="width: 100%; display: inline-block;">
+                                    <a href="#" title="product image" tabindex="-1">
+                                        <img src="./assets/images/edible-oil-400x400.jpg" alt="product image"
+                                            width="400" height="400" class="img-fluid">
+                                    </a>
+                                    <div class="content">
+                                        <div class="category">Groceries</div>
+                                        <h2 class="title">
+                                            <a href="#" title="product title" tabindex="-1">Natural Extracted Edible
+                                                Oil</a>
+                                        </h2>
+                                        <ul class="rating">
+                                            <li><i class="fa-regular fa-star"></i></li>
+                                            <li><i class="fa-regular fa-star"></i></li>
+                                            <li><i class="fa-regular fa-star"></i></li>
+                                            <li><i class="fa-regular fa-star"></i></li>
+                                            <li><i class="fa-regular fa-star"></i></li>
+                                        </ul>
+                                        <div class="price">
+                                            <spna class="current-price">£27.00</spna>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- pagination -->
+                        <ul class="pagination">
+                            <li><a href="#" title="page 1">1</a></li>
+                            <li><a href="#" title="page 2">2</a></li>
+                            <li><a href="#" title="next page"><i class="fa-solid fa-arrow-right-long"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer start -->
+    <footer>
+        <div class="top-footer">
+            <div class="container or-container">
+                <div class="row gy-3 gy-lg-0">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="footer-block">
+                            <a href="index.html" title="footer logo" class="footer-logo">
+                                <img src="./assets/images/organic-store-white-logo.png" alt="logo" width="180"
+                                    height="80">
+                            </a>
+                            <address>
+                                Maecenas mi justo, interdum at consectetur vel, tristique et arcu.
+                            </address>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-9">
+                        <div class="row">
+                            <div class="col-md-6 mb-3 mb-lg-0 col-lg-4">
+                                <div class="footer-block">
+                                    <h2>Website</h2>
+                                    <ul>
+                                        <li><a href="index.html" title="Home">Home</a></li>
+                                        <li><a href="about.html" title="About">about</a></li>
+                                        <li><a href="everything.html" title="Everything">everything</a></li>
+                                        <li><a href="#" title="Groceries">groceries</a></li>
+                                        <li><a href="#" title="Juice">juice</a></li>
+                                        <li><a href="#" title="Contact">contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3 mb-lg-0 col-lg-4">
+                                <div class="footer-block">
+                                    <h2>Quick Links</h2>
+                                    <ul>
+                                        <li><a href="#" title="Know More About Us">Know More About Us</a></li>
+                                        <li><a href="#" title="Visit Store">Visit Store</a></li>
+                                        <li><a href="#" title="Let’s Connect">Let’s Connect</a></li>
+                                        <li><a href="#" title="Locate Stores">Locate Stores</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="footer-block">
+                                    <h2>Site Links</h2>
+                                    <ul>
+                                        <li><a href="#" title="Privacy Policy">Privacy Policy</a></li>
+                                        <li><a href="#" title="Shipping Details">Shipping Details</a></li>
+                                        <li><a href="#" title="Offers Coupons">Offers Coupons</a></li>
+                                        <li><a href="#" title="Terms & Conditions">Terms & Conditions</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <div class="container or-container">
+                <div class="row gap-3 gap-md-0">
+                    <div class="col-md-6">
+                        <p class="text-center text-md-start">Copyright © 2025 | Organic Store</p>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="footer-social d-flex gap-4 justify-content-center justify-content-md-end">
+                            <li>
+                                <a href="#" title="facebook"><i class="fa-brands fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" title="twitter"><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" title="instagram"><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" title="facebook"><i class="fa-brands fa-yelp"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- slick slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
