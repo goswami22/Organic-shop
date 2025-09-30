@@ -632,7 +632,7 @@ header.tr-header .navbar {
   background-color: var(--gray-bg);
   display: grid;
   place-content: center;
-  padding-block: 15rem 16rem;
+  padding-block: 12rem 12rem;
 }
 
 .hero-section h1 {
@@ -1025,6 +1025,10 @@ ul.product-category li a {
 
 /* Tablet */
 @media screen and (min-width: 768px) {
+  .hero-section {
+    padding-block: 13rem 14rem;
+  }
+
 
   /* Home page css */
   .hero-banner span.subtitle {
@@ -1155,6 +1159,9 @@ ul.product-category li a {
 
 /* Desktop */
 @media screen and (min-width: 1200px) {
+    .hero-section {
+      padding-block: 15rem 16rem;
+    }
 
   /* Home page css */
   .hero-banner .hero-content {
